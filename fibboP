@@ -1,4 +1,6 @@
-n = 10
+import time
+t = time.time()
+n = 500
 a = 0
 print a
 b = 1
@@ -8,3 +10,5 @@ for cont in range(3,n+1):
 	a = b
 	b = c
 	print c
+	tt = time.time() - t
+	print tt
