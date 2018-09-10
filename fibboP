@@ -1,0 +1,10 @@
+n = 10
+a = 0
+print "1: "+a
+b = 1
+print "2: "+b
+for cont in range(3,n):
+	c = a + b
+	a = b
+	b = c
+	print cont+": "+c
