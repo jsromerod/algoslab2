@@ -2,13 +2,13 @@ import time
 t = time.time()
 n = 500
 a = 0
-print a
+print("1: %s" % (a,))
 b = 1
-print b
+print("2: %s" % (b,))
 for cont in range(3,n+1):
 	c = a + b
 	a = b
 	b = c
-	print c
+	print("%s: %s" % (cont,c))
 	tt = time.time() - t
-	print tt
+	print("tiempo para %s es: %s" % (cont,tt))
