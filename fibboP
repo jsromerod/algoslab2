@@ -15,10 +15,10 @@ for cont in range(3,n+1):
 	b = c
 	print("%s: %s" % (cont,c))
 	tt = time.time() - t
-	lista1 = np.hstack((lista1,tt))
+	tlist = np.hstack((tlist,tt))
 	print("tiempo para %s es: %s" % (cont,tt))
-	
-plt.plot(lista1)
-plt.title(Fibbo time)
-plt.xlabel(number)
-plt.ylabel(time)
+
+plt.plot(tlist)
+plt.title("Fibbo time")
+plt.xlabel("number")
+plt.ylabel("time")
