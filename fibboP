@@ -1,14 +1,24 @@
+# your code goes here
 import time
+import matplotlib.pyplot as plt
+import numpy as np
 t = time.time()
 n = 500
 a = 0
 print("1: %s" % (a,))
 b = 1
 print("2: %s" % (b,))
+tlist = np.array([])
 for cont in range(3,n+1):
 	c = a + b
 	a = b
 	b = c
 	print("%s: %s" % (cont,c))
 	tt = time.time() - t
+	lista1 = np.hstack((lista1,tt))
 	print("tiempo para %s es: %s" % (cont,tt))
+	
+plt.plot(lista1)
+plt.title(Fibbo time)
+plt.xlabel(number)
+plt.ylabel(time)
